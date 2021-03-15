@@ -1,0 +1,78 @@
+2021-03-11 12:58:42.99009142320 
+REPORT ON FILE BLANK LINE REMOVALS
+DELETING BOTH NULL AND BLANK LINES (all whitespaces)
+===========================================================
+LINENO:  15 Removed. Contained  3 whitespaces. lineStr:    
+LINENO:  18 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  21 Removed. Contained  1 whitespaces. lineStr:  
+LINENO:  37 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  39 Removed. Contained  16 whitespaces. lineStr:                 
+LINENO:  40 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  43 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  46 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  53 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  55 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  56 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  59 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  62 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  74 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  76 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  77 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  80 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  83 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  93 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  95 Removed. Contained  10 whitespaces. lineStr:           
+LINENO:  96 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  99 Removed. Contained  12 whitespaces. lineStr:             
+LINENO:  102 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  112 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  114 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  115 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  118 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  121 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  129 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  131 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  132 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  135 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  138 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  155 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  157 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  158 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  161 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  164 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  220 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  222 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  223 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  226 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  229 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  237 Removed. Contained  7 whitespaces. lineStr:        
+LINENO:  239 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  240 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  243 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  246 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  261 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  263 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  264 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  267 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  270 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  285 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  287 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  288 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  291 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  294 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  317 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  319 Removed. Contained  12 whitespaces. lineStr:             
+LINENO:  320 Removed. Contained  0 whitespaces. lineStr: 
+LINENO:  321 Removed. Contained  12 whitespaces. lineStr:             
+
+REPORT ON FILE BLANK LINE REMOVALS
+   cnt_lineRemoved                =  62
+   cnt_lineRemaining              =  266
+   cnt_lineBlank_BUT_WhiteSpace   =  8 (Blank lines with all white spaces) 
+   cnt_lineBlank_NO_WhiteSpace    =  54 (Blank lines with no white spaces) 
+   cnt_lineNonBlank_NonWhiteSpace =  266 (Effective usable lines)
+   Overall File cnt_lineTotal     =  328
+   inp_fname: files/bismillah.ngc
+   out_fname: files/bismillah.ngc_after_blankline_removals.txt
+   rep_fname: files/bismillah.ngc_after_blankline_removals.txt_report_12:58:42.99008773787.txt
+

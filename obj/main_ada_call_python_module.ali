@@ -1,0 +1,73 @@
+V "GNAT Lib v9"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main_ada_call_python_module%b  main_ada_call_python_module.adb  e31ee9f4 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W pkg_ada_call_python_module%s  pkg_ada_call_python_module.adb  pkg_ada_call_python_module.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20200312110721 76789da1 ada%s
+D a-except.ads		20200312110721 291912d5 ada.exceptions%s
+D a-ioexce.ads		20200312110721 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200312110721 119b8fb3 ada.streams%s
+D a-tags.ads		20200312110721 491b781d ada.tags%s
+D a-textio.ads		20200312110721 881db35a ada.text_io%s
+D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200312110721 5ab55268 interfaces%s
+D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
+D main_ada_call_python_module.adb  20210315013106 af0a5ed1 main_ada_call_python_module%b
+D pkg_ada_call_python_module.ads  20210315011522 c409047f pkg_ada_call_python_module%s
+D system.ads		20200312110721 4635ec04 system%s
+D s-conca2.ads		20200312110721 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20200312110721 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200312110721 54135002 system.exception_table%s
+D s-ficobl.ads		20200312110721 078245e4 system.file_control_block%s
+D s-imgint.ads		20200312110721 02dbe0c2 system.img_int%s
+D s-parame.ads		20200312110721 48ec542b system.parameters%s
+D s-secsta.ads		20200312110721 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20200312110721 a7318a92 system.soft_links%s
+D s-stache.ads		20200312110721 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200312110721 09bd3940 system.standard_library%s
+D s-stoele.ads		20200312110721 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200312110721 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200312110721 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20200312110721 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 10|3r6 8r27
+X 6 a-textio.ads
+49K13*Text_IO 471e16 10|3w10 8r31
+166U14*New_Line 10|24s9 29s9 35s9
+263U14*Put_Line 10|21s9 25s9 30s9 33s9 36s9 39s9 42s9 45s9
+X 10 main_ada_call_python_module.adb
+6U11*main_ada_call_python_module 6b11 52l5 52t32
+8K12 ATIO=8:31 21r4 24r4 25r4 29r4 30r4 33r4 35r4 36r4 39r4 42r4 45r4
+9K12 PACPM=9:27 11r13 19r4 22r4 26r14 27r4 31r14 38r14 41r14 44r14 47r4 49r4
+11m4 Module{11|9M9} 26m4 27r16 31r26 38r26 41r26 44r26 47r24
+13i4 A{integer} 31r41 38r41 41r41 44r41
+14i4 B{integer} 31r44 38r44 41r44 44r44
+15i4 Result{integer} 31m4 33r66 38m4 39r48 41m4 42r48 44m4 45r48
+X 11 pkg_ada_call_python_module.ads
+4K9*pkg_ada_call_python_module 10|2w6 9r27 11|30e31
+9M9*Module<12|67M9> 10|11r19
+11U14*Initialize 10|19s10
+12U14*Finalize 10|49s10
+14U14*Execute_String 10|22s10
+16V13*Import_File{9M9} 10|26s20
+17U14*Close_Module 10|47s10
+21U14*Call 10|27s10
+22V14*Call{integer} 10|31s20 38s20 41s20 44s20
+X 12 system.ads
+67M9*Address
+

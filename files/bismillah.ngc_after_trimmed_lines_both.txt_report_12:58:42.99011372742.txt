@@ -1,0 +1,48 @@
+2021-03-11 12:58:42.99011530783 
+REPORT ON FILE TRIM LINES
+TRIM BOTH (LEADING AND TRAILING WHITESPACES)
+===========================================================
+LINENO:  54 trimmed both ends line_lengthBefore:  67 line_lengthAfter:  63 DELTA =  4 whitespaces removed.
+LINENO:  56 trimmed both ends line_lengthBefore:  85 line_lengthAfter:  63 DELTA =  22 whitespaces removed.
+LINENO:  68 trimmed both ends line_lengthBefore:  67 line_lengthAfter:  63 DELTA =  4 whitespaces removed.
+LINENO:  69 trimmed both ends line_lengthBefore:  67 line_lengthAfter:  63 DELTA =  4 whitespaces removed.
+LINENO:  70 trimmed both ends line_lengthBefore:  83 line_lengthAfter:  63 DELTA =  20 whitespaces removed.
+LINENO:  86 trimmed both ends line_lengthBefore:  73 line_lengthAfter:  64 DELTA =  9 whitespaces removed.
+LINENO:  123 trimmed both ends line_lengthBefore:  49 line_lengthAfter:  33 DELTA =  16 whitespaces removed.
+LINENO:  132 trimmed both ends line_lengthBefore:  111 line_lengthAfter:  97 DELTA =  14 whitespaces removed.
+LINENO:  161 trimmed both ends line_lengthBefore:  104 line_lengthAfter:  96 DELTA =  8 whitespaces removed.
+LINENO:  162 trimmed both ends line_lengthBefore:  104 line_lengthAfter:  96 DELTA =  8 whitespaces removed.
+LINENO:  163 trimmed both ends line_lengthBefore:  105 line_lengthAfter:  97 DELTA =  8 whitespaces removed.
+LINENO:  167 trimmed both ends line_lengthBefore:  78 line_lengthAfter:  62 DELTA =  16 whitespaces removed.
+LINENO:  168 trimmed both ends line_lengthBefore:  111 line_lengthAfter:  95 DELTA =  16 whitespaces removed.
+LINENO:  169 trimmed both ends line_lengthBefore:  111 line_lengthAfter:  95 DELTA =  16 whitespaces removed.
+LINENO:  170 trimmed both ends line_lengthBefore:  111 line_lengthAfter:  95 DELTA =  16 whitespaces removed.
+LINENO:  171 trimmed both ends line_lengthBefore:  112 line_lengthAfter:  96 DELTA =  16 whitespaces removed.
+LINENO:  172 trimmed both ends line_lengthBefore:  113 line_lengthAfter:  97 DELTA =  16 whitespaces removed.
+LINENO:  173 trimmed both ends line_lengthBefore:  113 line_lengthAfter:  97 DELTA =  16 whitespaces removed.
+LINENO:  187 trimmed both ends line_lengthBefore:  45 line_lengthAfter:  41 DELTA =  4 whitespaces removed.
+LINENO:  188 trimmed both ends line_lengthBefore:  75 line_lengthAfter:  71 DELTA =  4 whitespaces removed.
+LINENO:  189 trimmed both ends line_lengthBefore:  66 line_lengthAfter:  62 DELTA =  4 whitespaces removed.
+LINENO:  190 trimmed both ends line_lengthBefore:  66 line_lengthAfter:  62 DELTA =  4 whitespaces removed.
+LINENO:  191 trimmed both ends line_lengthBefore:  67 line_lengthAfter:  63 DELTA =  4 whitespaces removed.
+LINENO:  192 trimmed both ends line_lengthBefore:  67 line_lengthAfter:  63 DELTA =  4 whitespaces removed.
+LINENO:  193 trimmed both ends line_lengthBefore:  26 line_lengthAfter:  22 DELTA =  4 whitespaces removed.
+LINENO:  204 trimmed both ends line_lengthBefore:  111 line_lengthAfter:  96 DELTA =  15 whitespaces removed.
+LINENO:  205 trimmed both ends line_lengthBefore:  100 line_lengthAfter:  96 DELTA =  4 whitespaces removed.
+LINENO:  206 trimmed both ends line_lengthBefore:  114 line_lengthAfter:  96 DELTA =  18 whitespaces removed.
+LINENO:  207 trimmed both ends line_lengthBefore:  101 line_lengthAfter:  97 DELTA =  4 whitespaces removed.
+LINENO:  224 trimmed both ends line_lengthBefore:  119 line_lengthAfter:  97 DELTA =  22 whitespaces removed.
+LINENO:  240 trimmed both ends line_lengthBefore:  113 line_lengthAfter:  97 DELTA =  16 whitespaces removed.
+LINENO:  241 trimmed both ends line_lengthBefore:  115 line_lengthAfter:  98 DELTA =  17 whitespaces removed.
+LINENO:  244 trimmed both ends line_lengthBefore:  115 line_lengthAfter:  96 DELTA =  19 whitespaces removed.
+LINENO:  249 trimmed both ends line_lengthBefore:  105 line_lengthAfter:  97 DELTA =  8 whitespaces removed.
+LINENO:  250 trimmed both ends line_lengthBefore:  106 line_lengthAfter:  98 DELTA =  8 whitespaces removed.
+LINENO:  251 trimmed both ends line_lengthBefore:  106 line_lengthAfter:  98 DELTA =  8 whitespaces removed.
+LINENO:  252 trimmed both ends line_lengthBefore:  105 line_lengthAfter:  97 DELTA =  8 whitespaces removed.
+LINENO:  253 trimmed both ends line_lengthBefore:  121 line_lengthAfter:  97 DELTA =  24 whitespaces removed.
+LINENO:  254 trimmed both ends line_lengthBefore:  104 line_lengthAfter:  96 DELTA =  8 whitespaces removed.
+LINENO:  259 trimmed both ends line_lengthBefore:  45 line_lengthAfter:  31 DELTA =  14 whitespaces removed.
+LINENO:  262 trimmed both ends line_lengthBefore:  27 line_lengthAfter:  19 DELTA =  8 whitespaces removed.
+LINENO:  263 trimmed both ends line_lengthBefore:  10 line_lengthAfter:  2 DELTA =  8 whitespaces removed.
+LINENO:  264 trimmed both ends line_lengthBefore:  94 line_lengthAfter:  86 DELTA =  8 whitespaces removed.
+LINENO:  265 trimmed both ends line_lengthBefore:  13 line_lengthAfter:  5 DELTA =  8 whitespaces removed.

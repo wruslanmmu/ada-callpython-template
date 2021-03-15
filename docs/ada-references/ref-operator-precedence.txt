@@ -1,0 +1,10 @@
+
+not Sunny or Warm    --  same as (not Sunny) or Warm
+X > 4.0 and Y > 0.0  --  same as (X > 4.0) and (Y > 0.0)
+-4.0*A**2            --  same as –(4.0 * (A**2))
+abs(1 + A) + B       --  same as (abs (1 + A)) + B
+Y**(-3)              --  parentheses are necessary
+A / B * C            --  same as (A/B)*C
+A + (B + C)          --  evaluate B + C before adding it to A 
+
+

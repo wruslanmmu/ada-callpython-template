@@ -1,0 +1,23 @@
+[GENERATED OBJECT FILE]
+b__main_ada_call_python_module.o
+[PROJECT FILES]
+/home/alimankalam/Documents/ada-python-template/ada_python_template.gpr
+20210315013336
+[BOUND OBJECT FILES]
+/home/alimankalam/Documents/ada-python-template/obj/pkg_ada_call_python_module.o
+/home/alimankalam/Documents/ada-python-template/obj/main_ada_call_python_module.o
+[GENERATED SOURCE FILES]
+b__main_ada_call_python_module.ads
+b__main_ada_call_python_module.adb
+b__main_ada_call_python_module.ali
+[RESULTING OPTIONS]
+-L/home/alimankalam/Documents/ada-python-template/obj/
+-L/home/alimankalam/Documents/ada-python-template/obj/
+-L/usr/lib/gcc/x86_64-linux-gnu/9/adalib/
+-shared
+-shared-libgcc
+-lgnat-9
+-ldl
+[RUN PATH OPTION]
+/usr/lib/gcc/x86_64-linux-gnu/9/adalib/
+/usr/lib

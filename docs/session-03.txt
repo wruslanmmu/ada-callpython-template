@@ -1,0 +1,104 @@
+
+===========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-project-full-template$ ls -al
+total 48
+drwxrwxr-x  9 wruslan wruslan 4096 Mar 12 11:14 .
+drwxrwxr-x 11 wruslan wruslan 4096 Mar 12 10:50 ..
+-rw-rw-r--  1 wruslan wruslan 4638 Mar 12 10:51 ada_full_project_specifications.gpr
+drwxrwxr-x  4 wruslan wruslan 4096 Mar 12 10:55 docs
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 12 11:15 exec
+drwxrwxr-x  4 wruslan wruslan 4096 Mar 12 10:51 figures
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 12 10:51 files
+drwxrwxr-x  8 wruslan wruslan 4096 Mar 12 11:15 .git
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 12 11:15 obj
+-rw-rw-r--  1 wruslan wruslan  565 Mar 12 11:14 README.md
+drwxrwxr-x  3 wruslan wruslan 4096 Mar 12 10:51 src
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-project-full-template$
+
+=========================================================== 
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-project-full-template$ git add .
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-project-full-template$ git commit -m "initial commit"
+[main 14970da] initial commit
+ 59 files changed, 3372 insertions(+), 2 deletions(-)
+ rewrite README.md (68%)
+ create mode 100644 ada_full_project_specifications.gpr
+ create mode 100644 docs/ada-references/01-Introduction-to-Ada-(2020).pdf
+ create mode 100644 docs/ada-references/02-Introduction-to-Spark-(2020).pdf
+ create mode 100644 docs/copy-project-specifications/ada_full_project_specifications.gpr
+ create mode 100644 docs/copy-project-specifications/ada_simplified_project_specifications.gpr
+ create mode 100644 docs/session-01.txt
+ create mode 100644 docs/session-02.txt
+ create mode 100755 exec/main_ada_xxxxxxx.adx
+ create mode 100644 figures/session-jpg/Screenshot from 2021-03-12 09-33-37.jpg
+ create mode 100644 figures/session-jpg/Screenshot from 2021-03-12 09-34-49.jpg
+ create mode 100644 figures/session-jpg/Screenshot from 2021-03-12 09-36-43.jpg
+ create mode 100644 figures/session-jpg/Screenshot from 2021-03-12 09-38-29.jpg
+ create mode 100644 figures/session-jpg/Screenshot from 2021-03-12 09-40-02.jpg
+ create mode 100644 figures/session-jpg/Screenshot from 2021-03-12 09-41-21.jpg
+ create mode 100644 figures/session-jpg/Screenshot from 2021-03-12 09-42-03.jpg
+ create mode 100644 figures/session-jpg/Screenshot from 2021-03-12 09-43-17.jpg
+ create mode 100644 figures/session-jpg/Screenshot from 2021-03-12 09-43-45.jpg
+ create mode 100644 figures/session-jpg/Screenshot from 2021-03-12 09-44-18.jpg
+ create mode 100644 figures/session-jpg/Screenshot from 2021-03-12 09-56-53.jpg
+ create mode 100644 figures/session-jpg/Screenshot from 2021-03-12 10-06-13.jpg
+ create mode 100644 figures/session-jpg/Screenshot from 2021-03-12 10-08-22.jpg
+ create mode 100644 figures/session-png/Screenshot from 2021-03-12 09-33-37.png
+ create mode 100644 figures/session-png/Screenshot from 2021-03-12 09-34-49.png
+ create mode 100644 figures/session-png/Screenshot from 2021-03-12 09-36-43.png
+ create mode 100644 figures/session-png/Screenshot from 2021-03-12 09-38-29.png
+ create mode 100644 figures/session-png/Screenshot from 2021-03-12 09-40-02.png
+ create mode 100644 figures/session-png/Screenshot from 2021-03-12 09-41-21.png
+ create mode 100644 figures/session-png/Screenshot from 2021-03-12 09-42-03.png
+ create mode 100644 figures/session-png/Screenshot from 2021-03-12 09-43-17.png
+ create mode 100644 figures/session-png/Screenshot from 2021-03-12 09-43-45.png
+ create mode 100644 figures/session-png/Screenshot from 2021-03-12 09-44-18.png
+ create mode 100644 figures/session-png/Screenshot from 2021-03-12 09-56-53.png
+ create mode 100644 figures/session-png/Screenshot from 2021-03-12 10-06-13.png
+ create mode 100644 figures/session-png/Screenshot from 2021-03-12 10-08-22.png
+ create mode 100644 files/bismillah.ngc
+ create mode 100644 files/bismillah.ngc_after_blankline_removals.txt
+ create mode 100644 files/bismillah.ngc_after_blankline_removals.txt_report_12:58:42.99008773787.txt
+ create mode 100644 files/bismillah.ngc_after_trimmed_lines_both.txt
+ create mode 100644 files/bismillah.ngc_after_trimmed_lines_both.txt_report_12:58:42.99011372742.txt
+ create mode 100644 obj/b__main_ada_xxxxxxx.adb
+ create mode 100644 obj/b__main_ada_xxxxxxx.ads
+ create mode 100644 obj/b__main_ada_xxxxxxx.ali
+ create mode 100644 obj/b__main_ada_xxxxxxx.o
+ create mode 100644 obj/gpsauto.cgpr
+ create mode 100644 obj/main_ada_xxxxxxx.adb.stderr
+ create mode 100644 obj/main_ada_xxxxxxx.adb.stdout
+ create mode 100644 obj/main_ada_xxxxxxx.ali
+ create mode 100644 obj/main_ada_xxxxxxx.bexch
+ create mode 100644 obj/main_ada_xxxxxxx.cswi
+ create mode 100644 obj/main_ada_xxxxxxx.o
+ create mode 100644 obj/pkg_ada_datetime_stamp.adb.stderr
+ create mode 100644 obj/pkg_ada_datetime_stamp.adb.stdout
+ create mode 100644 obj/pkg_ada_datetime_stamp.ali
+ create mode 100644 obj/pkg_ada_datetime_stamp.cswi
+ create mode 100644 obj/pkg_ada_datetime_stamp.o
+ create mode 100644 src/main_ada_xxxxxxx.adb
+ create mode 100644 src/pkg-ada-datetime-stamp/pkg_ada_datetime_stamp.adb
+ create mode 100644 src/pkg-ada-datetime-stamp/pkg_ada_datetime_stamp.ads
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-project-full-template$ 
+
+===========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-project-full-template$ git push origin main
+Username for 'https://github.com': wruslanmit
+Password for 'https://wruslanmit@github.com': 
+Enumerating objects: 70, done.
+Counting objects: 100% (70/70), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (64/64), done.
+Writing objects: 100% (68/68), 4.31 MiB | 67.00 KiB/s, done.
+Total 68 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/wruslanmit/ada-project-full-template.git
+   f4c5dd3..14970da  main -> main
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-project-full-template$ 
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+
+
+

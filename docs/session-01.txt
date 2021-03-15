@@ -1,0 +1,136 @@
+CLEAN ALL (Menu -> Build -> Clean -> Clean All)
+===========================================================
+gprclean -r -P/home/wruslan/github-mit/ada-readymade-template/ada_full_project_specifications.gpr -c -f
+"/home/wruslan/github-mit/ada-readymade-template/obj/pkg_ada_datetime_stamp.o" has been deleted
+"/home/wruslan/github-mit/ada-readymade-template/obj/pkg_ada_datetime_stamp.ali" has been deleted
+"/home/wruslan/github-mit/ada-readymade-template/obj/pkg_ada_datetime_stamp.cswi" has been deleted
+"/home/wruslan/github-mit/ada-readymade-template/obj/pkg_ada_datetime_stamp.adb.stdout" has been deleted
+"/home/wruslan/github-mit/ada-readymade-template/obj/pkg_ada_datetime_stamp.adb.stderr" has been deleted
+"/home/wruslan/github-mit/ada-readymade-template/obj/main_ada_xxxxxxx.o" has been deleted
+"/home/wruslan/github-mit/ada-readymade-template/obj/main_ada_xxxxxxx.ali" has been deleted
+"/home/wruslan/github-mit/ada-readymade-template/obj/main_ada_xxxxxxx.cswi" has been deleted
+"/home/wruslan/github-mit/ada-readymade-template/obj/main_ada_xxxxxxx.adb.stdout" has been deleted
+"/home/wruslan/github-mit/ada-readymade-template/obj/main_ada_xxxxxxx.adb.stderr" has been deleted
+"/home/wruslan/github-mit/ada-readymade-template/obj/b__main_ada_xxxxxxx.o" has been deleted
+"/home/wruslan/github-mit/ada-readymade-template/obj/b__main_ada_xxxxxxx.ads" has been deleted
+"/home/wruslan/github-mit/ada-readymade-template/obj/b__main_ada_xxxxxxx.adb" has been deleted
+"/home/wruslan/github-mit/ada-readymade-template/obj/b__main_ada_xxxxxxx.ali" has been deleted
+"/home/wruslan/github-mit/ada-readymade-template/obj/main_ada_xxxxxxx.bexch" has been deleted
+[2021-03-12 10:01:55] process terminated successfully, elapsed time: 00.75s
+
+BUILD ALL (Menu -> Build -> Project -> Build All)
+===========================================================
+gprbuild -d -P/home/wruslan/github-mit/ada-readymade-template/ada_full_project_specifications.gpr -s -k
+Compile
+   [Ada]          main_ada_xxxxxxx.adb
+   [Ada]          pkg_ada_datetime_stamp.adb
+Bind
+   [gprbind]      main_ada_xxxxxxx.bexch
+   [Ada]          main_ada_xxxxxxx.ali
+Link
+   [link]         main_ada_xxxxxxx.adb
+[2021-03-12 10:06:25] process terminated successfully, elapsed time: 01.15s
+
+BUILD AND RUN ... (Click icon RightArrow)
+===========================================================
+/home/wruslan/github-mit/ada-readymade-template/exec/main_ada_xxxxxxx.adx
+2021-03-12 02:08:43.63185090546 STARTED: main Bismillah 3 times WRY
+
+
+2021-03-12 02:08:43.63185113035 ENDED: main Alhamdulillah 3 times WRY
+[2021-03-12 10:08:43] process terminated successfully, elapsed time: 00.19s
+
+PROJECT FOLDERS
+===========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-readymade-template$ ls -al
+total 40
+drwxrwxr-x  8 wruslan wruslan 4096 Mar 12 10:35 .
+drwxrwxr-x 10 wruslan wruslan 4096 Mar 12 09:17 ..
+-rw-rw-r--  1 wruslan wruslan 4638 Mar 12 09:32 ada_full_project_specifications.gpr
+drwxrwxr-x  4 wruslan wruslan 4096 Mar 12 10:35 docs
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 12 10:06 exec
+drwxrwxr-x  4 wruslan wruslan 4096 Mar 12 10:13 figures
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 12 10:31 files
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 12 10:06 obj
+drwxrwxr-x  3 wruslan wruslan 4096 Mar 12 09:34 src
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-readymade-template$ 
+
+PROJECT DIRECTORY AND FILE STRUCTURE
+===========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-readymade-template$ tree ./
+./
+├── ada_full_project_specifications.gpr
+├── docs
+│   ├── ada-references
+│   │   ├── 01-Introduction-to-Ada-(2020).pdf
+│   │   └── 02-Introduction-to-Spark-(2020).pdf
+│   ├── copy-project-specifications
+│   │   ├── ada_full_project_specifications.gpr
+│   │   └── ada_simplified_project_specifications.gpr
+│   └── session-01.txt
+├── exec
+│   └── main_ada_xxxxxxx.adx
+├── figures
+│   ├── session-jpg
+│   │   ├── Screenshot from 2021-03-12 09-33-37.jpg
+│   │   ├── Screenshot from 2021-03-12 09-34-49.jpg
+│   │   ├── Screenshot from 2021-03-12 09-36-43.jpg
+│   │   ├── Screenshot from 2021-03-12 09-38-29.jpg
+│   │   ├── Screenshot from 2021-03-12 09-40-02.jpg
+│   │   ├── Screenshot from 2021-03-12 09-41-21.jpg
+│   │   ├── Screenshot from 2021-03-12 09-42-03.jpg
+│   │   ├── Screenshot from 2021-03-12 09-43-17.jpg
+│   │   ├── Screenshot from 2021-03-12 09-43-45.jpg
+│   │   ├── Screenshot from 2021-03-12 09-44-18.jpg
+│   │   ├── Screenshot from 2021-03-12 09-56-53.jpg
+│   │   ├── Screenshot from 2021-03-12 10-06-13.jpg
+│   │   └── Screenshot from 2021-03-12 10-08-22.jpg
+│   └── session-png
+│       ├── Screenshot from 2021-03-12 09-33-37.png
+│       ├── Screenshot from 2021-03-12 09-34-49.png
+│       ├── Screenshot from 2021-03-12 09-36-43.png
+│       ├── Screenshot from 2021-03-12 09-38-29.png
+│       ├── Screenshot from 2021-03-12 09-40-02.png
+│       ├── Screenshot from 2021-03-12 09-41-21.png
+│       ├── Screenshot from 2021-03-12 09-42-03.png
+│       ├── Screenshot from 2021-03-12 09-43-17.png
+│       ├── Screenshot from 2021-03-12 09-43-45.png
+│       ├── Screenshot from 2021-03-12 09-44-18.png
+│       ├── Screenshot from 2021-03-12 09-56-53.png
+│       ├── Screenshot from 2021-03-12 10-06-13.png
+│       └── Screenshot from 2021-03-12 10-08-22.png
+├── files
+│   ├── bismillah.ngc
+│   ├── bismillah.ngc_after_blankline_removals.txt
+│   ├── bismillah.ngc_after_blankline_removals.txt_report_12:58:42.99008773787.txt
+│   ├── bismillah.ngc_after_trimmed_lines_both.txt
+│   └── bismillah.ngc_after_trimmed_lines_both.txt_report_12:58:42.99011372742.txt
+├── obj
+│   ├── b__main_ada_xxxxxxx.adb
+│   ├── b__main_ada_xxxxxxx.ads
+│   ├── b__main_ada_xxxxxxx.ali
+│   ├── b__main_ada_xxxxxxx.o
+│   ├── gpsauto.cgpr
+│   ├── main_ada_xxxxxxx.adb.stderr
+│   ├── main_ada_xxxxxxx.adb.stdout
+│   ├── main_ada_xxxxxxx.ali
+│   ├── main_ada_xxxxxxx.bexch
+│   ├── main_ada_xxxxxxx.cswi
+│   ├── main_ada_xxxxxxx.o
+│   ├── pkg_ada_datetime_stamp.adb.stderr
+│   ├── pkg_ada_datetime_stamp.adb.stdout
+│   ├── pkg_ada_datetime_stamp.ali
+│   ├── pkg_ada_datetime_stamp.cswi
+│   └── pkg_ada_datetime_stamp.o
+└── src
+    ├── main_ada_xxxxxxx.adb
+    └── pkg-ada-datetime-stamp
+        ├── pkg_ada_datetime_stamp.adb
+        └── pkg_ada_datetime_stamp.ads
+
+11 directories, 57 files
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-readymade-template$ 
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+
