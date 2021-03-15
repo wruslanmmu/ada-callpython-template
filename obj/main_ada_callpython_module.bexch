@@ -1,0 +1,28 @@
+[GENERATED OBJECT FILE]
+b__main_ada_callpython_module.o
+[PROJECT FILES]
+/home/wruslan/github-mmu/ada-callpython-template/ada_callpython_template.gpr
+20210315211739
+[BOUND OBJECT FILES]
+/home/wruslan/github-mmu/ada-callpython-template/obj/pkg_ada_callpython_module.o
+/home/wruslan/github-mmu/ada-callpython-template/obj/pkg_ada_datetime_stamp.o
+/home/wruslan/github-mmu/ada-callpython-template/obj/pkg_ada_realtime_delays.o
+/home/wruslan/github-mmu/ada-callpython-template/obj/main_ada_callpython_module.o
+[GENERATED SOURCE FILES]
+b__main_ada_callpython_module.ads
+b__main_ada_callpython_module.adb
+b__main_ada_callpython_module.ali
+[RESULTING OPTIONS]
+-L/home/wruslan/github-mmu/ada-callpython-template/obj/
+-L/home/wruslan/github-mmu/ada-callpython-template/obj/
+-L/usr/lib/gcc/x86_64-linux-gnu/9/adalib/
+-shared
+-shared-libgcc
+-lgnarl-9
+-lgnat-9
+-lpthread
+-lrt
+-ldl
+[RUN PATH OPTION]
+/usr/lib/gcc/x86_64-linux-gnu/9/adalib/
+/usr/lib

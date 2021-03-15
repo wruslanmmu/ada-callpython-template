@@ -1,136 +1,158 @@
-CLEAN ALL (Menu -> Build -> Clean -> Clean All)
-===========================================================
-gprclean -r -P/home/wruslan/github-mit/ada-readymade-template/ada_full_project_specifications.gpr -c -f
-"/home/wruslan/github-mit/ada-readymade-template/obj/pkg_ada_datetime_stamp.o" has been deleted
-"/home/wruslan/github-mit/ada-readymade-template/obj/pkg_ada_datetime_stamp.ali" has been deleted
-"/home/wruslan/github-mit/ada-readymade-template/obj/pkg_ada_datetime_stamp.cswi" has been deleted
-"/home/wruslan/github-mit/ada-readymade-template/obj/pkg_ada_datetime_stamp.adb.stdout" has been deleted
-"/home/wruslan/github-mit/ada-readymade-template/obj/pkg_ada_datetime_stamp.adb.stderr" has been deleted
-"/home/wruslan/github-mit/ada-readymade-template/obj/main_ada_xxxxxxx.o" has been deleted
-"/home/wruslan/github-mit/ada-readymade-template/obj/main_ada_xxxxxxx.ali" has been deleted
-"/home/wruslan/github-mit/ada-readymade-template/obj/main_ada_xxxxxxx.cswi" has been deleted
-"/home/wruslan/github-mit/ada-readymade-template/obj/main_ada_xxxxxxx.adb.stdout" has been deleted
-"/home/wruslan/github-mit/ada-readymade-template/obj/main_ada_xxxxxxx.adb.stderr" has been deleted
-"/home/wruslan/github-mit/ada-readymade-template/obj/b__main_ada_xxxxxxx.o" has been deleted
-"/home/wruslan/github-mit/ada-readymade-template/obj/b__main_ada_xxxxxxx.ads" has been deleted
-"/home/wruslan/github-mit/ada-readymade-template/obj/b__main_ada_xxxxxxx.adb" has been deleted
-"/home/wruslan/github-mit/ada-readymade-template/obj/b__main_ada_xxxxxxx.ali" has been deleted
-"/home/wruslan/github-mit/ada-readymade-template/obj/main_ada_xxxxxxx.bexch" has been deleted
-[2021-03-12 10:01:55] process terminated successfully, elapsed time: 00.75s
 
-BUILD ALL (Menu -> Build -> Project -> Build All)
-===========================================================
-gprbuild -d -P/home/wruslan/github-mit/ada-readymade-template/ada_full_project_specifications.gpr -s -k
+COMPILATION
+-- ========================================================
+gprbuild -d -P/home/wruslan/github-mmu/ada-callpython-template/ada_callpython_template.gpr -s -k
 Compile
-   [Ada]          main_ada_xxxxxxx.adb
+   [Ada]          main_ada_callpython_module.adb
+   [Ada]          pkg_ada_callpython_module.adb
    [Ada]          pkg_ada_datetime_stamp.adb
+   [Ada]          pkg_ada_realtime_delays.adb
 Bind
-   [gprbind]      main_ada_xxxxxxx.bexch
-   [Ada]          main_ada_xxxxxxx.ali
+   [gprbind]      main_ada_callpython_module.bexch
+   [Ada]          main_ada_callpython_module.ali
 Link
-   [link]         main_ada_xxxxxxx.adb
-[2021-03-12 10:06:25] process terminated successfully, elapsed time: 01.15s
+   [link]         main_ada_callpython_module.adb
+[2021-03-16 05:31:54] process terminated successfully, elapsed time: 01.26s
 
-BUILD AND RUN ... (Click icon RightArrow)
-===========================================================
-/home/wruslan/github-mit/ada-readymade-template/exec/main_ada_xxxxxxx.adx
-2021-03-12 02:08:43.63185090546 STARTED: main Bismillah 3 times WRY
+EXECUTION
+-- ========================================================
+/home/wruslan/github-mmu/ada-callpython-template/exec/main_ada_callpython_module.adx
+2021-03-15 21:33:05.23772162617 STARTED: main Bismillah 3 times WRY
 
+executing Python directly from Ada:
+Hello from Python!
 
-2021-03-12 02:08:43.63185113035 ENDED: main Alhamdulillah 3 times WRY
-[2021-03-12 10:08:43] process terminated successfully, elapsed time: 00.19s
+loading external Python module and calling functions from that module:
+Hello from Python module!
 
-PROJECT FOLDERS
-===========================================================
-wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-readymade-template$ ls -al
-total 40
-drwxrwxr-x  8 wruslan wruslan 4096 Mar 12 10:35 .
-drwxrwxr-x 10 wruslan wruslan 4096 Mar 12 09:17 ..
--rw-rw-r--  1 wruslan wruslan 4638 Mar 12 09:32 ada_full_project_specifications.gpr
-drwxrwxr-x  4 wruslan wruslan 4096 Mar 12 10:35 docs
-drwxrwxr-x  2 wruslan wruslan 4096 Mar 12 10:06 exec
-drwxrwxr-x  4 wruslan wruslan 4096 Mar 12 10:13 figures
-drwxrwxr-x  2 wruslan wruslan 4096 Mar 12 10:31 files
-drwxrwxr-x  2 wruslan wruslan 4096 Mar 12 10:06 obj
-drwxrwxr-x  3 wruslan wruslan 4096 Mar 12 09:34 src
-wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-readymade-template$ 
+asking Python to add two integers:
+Python adding: 10 + 2
+Ada got result from Python: 12
 
-PROJECT DIRECTORY AND FILE STRUCTURE
-===========================================================
-wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-readymade-template$ tree ./
+we can try other operations, too:
+subtract: 8
+multiply: 20
+divide  : 5
+
+2021-03-15 21:33:05.24783103736 ENDED: main Alhamdulillah 3 times WRY. Execution time:  0.010973736 seconds.
+[2021-03-16 05:33:05] process terminated successfully, elapsed time: 00.19s
+
+-- ========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mmu/ada-callpython-template$ ls -al
+total 60
+drwxrwxr-x 11 wruslan wruslan 4096 Mar 16 05:33 .
+drwxrwxr-x  9 wruslan wruslan 4096 Mar 15 15:35 ..
+-rw-rw-r--  1 wruslan wruslan 1556 Mar 16 05:17 ada_callpython_template.gpr
+drwxrwxr-x  5 wruslan wruslan 4096 Mar 16 05:37 docs
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 16 05:31 exec
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 16 05:35 figures
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 16 05:26 files
+drwxrwxr-x  8 wruslan wruslan 4096 Mar 16 05:31 .git
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 15 08:40 lib
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 16 05:27 mod
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 16 05:31 obj
+-rw-rw-r--  1 wruslan wruslan  226 Mar 16 05:30 python_module.py
+-rw-rw-r--  1 wruslan wruslan  792 Mar 16 05:33 python_module.pyc
+-rw-rw-r--  1 wruslan wruslan   68 Mar 16 04:21 README.md
+drwxrwxr-x  7 wruslan wruslan 4096 Mar 16 05:31 src
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mmu/ada-callpython-template$ 
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mmu/ada-callpython-template$ tree ./
 ./
-├── ada_full_project_specifications.gpr
+├── ada_callpython_template.gpr
 ├── docs
 │   ├── ada-references
 │   │   ├── 01-Introduction-to-Ada-(2020).pdf
-│   │   └── 02-Introduction-to-Spark-(2020).pdf
+│   │   ├── 02-Introduction-to-Spark-(2020).pdf
+│   │   └── ref-operator-precedence.txt
 │   ├── copy-project-specifications
 │   │   ├── ada_full_project_specifications.gpr
 │   │   └── ada_simplified_project_specifications.gpr
-│   └── session-01.txt
+│   ├── session-01.txt
+│   └── testing-codes
+│       └── 01-main_ada_xxxxxxx.adb
 ├── exec
+│   ├── main_ada_call_python_module.adx
+│   ├── main_ada_callpython_module.adx
 │   └── main_ada_xxxxxxx.adx
 ├── figures
-│   ├── session-jpg
-│   │   ├── Screenshot from 2021-03-12 09-33-37.jpg
-│   │   ├── Screenshot from 2021-03-12 09-34-49.jpg
-│   │   ├── Screenshot from 2021-03-12 09-36-43.jpg
-│   │   ├── Screenshot from 2021-03-12 09-38-29.jpg
-│   │   ├── Screenshot from 2021-03-12 09-40-02.jpg
-│   │   ├── Screenshot from 2021-03-12 09-41-21.jpg
-│   │   ├── Screenshot from 2021-03-12 09-42-03.jpg
-│   │   ├── Screenshot from 2021-03-12 09-43-17.jpg
-│   │   ├── Screenshot from 2021-03-12 09-43-45.jpg
-│   │   ├── Screenshot from 2021-03-12 09-44-18.jpg
-│   │   ├── Screenshot from 2021-03-12 09-56-53.jpg
-│   │   ├── Screenshot from 2021-03-12 10-06-13.jpg
-│   │   └── Screenshot from 2021-03-12 10-08-22.jpg
-│   └── session-png
-│       ├── Screenshot from 2021-03-12 09-33-37.png
-│       ├── Screenshot from 2021-03-12 09-34-49.png
-│       ├── Screenshot from 2021-03-12 09-36-43.png
-│       ├── Screenshot from 2021-03-12 09-38-29.png
-│       ├── Screenshot from 2021-03-12 09-40-02.png
-│       ├── Screenshot from 2021-03-12 09-41-21.png
-│       ├── Screenshot from 2021-03-12 09-42-03.png
-│       ├── Screenshot from 2021-03-12 09-43-17.png
-│       ├── Screenshot from 2021-03-12 09-43-45.png
-│       ├── Screenshot from 2021-03-12 09-44-18.png
-│       ├── Screenshot from 2021-03-12 09-56-53.png
-│       ├── Screenshot from 2021-03-12 10-06-13.png
-│       └── Screenshot from 2021-03-12 10-08-22.png
+│   ├── Screenshot from 2021-03-16 05-33-47.jpg
+│   └── Screenshot from 2021-03-16 05-33-47.png
 ├── files
-│   ├── bismillah.ngc
-│   ├── bismillah.ngc_after_blankline_removals.txt
-│   ├── bismillah.ngc_after_blankline_removals.txt_report_12:58:42.99008773787.txt
-│   ├── bismillah.ngc_after_trimmed_lines_both.txt
-│   └── bismillah.ngc_after_trimmed_lines_both.txt_report_12:58:42.99011372742.txt
+├── lib
+├── mod
 ├── obj
+│   ├── ada_callpython_template-loc.xml
+│   ├── ada_full_project_specifications-loc.xml
+│   ├── ada_python_template-loc.xml
+│   ├── b__main_ada_call_python_module.adb
+│   ├── b__main_ada_callpython_module.adb
+│   ├── b__main_ada_call_python_module.ads
+│   ├── b__main_ada_callpython_module.ads
+│   ├── b__main_ada_call_python_module.ali
+│   ├── b__main_ada_callpython_module.ali
+│   ├── b__main_ada_call_python_module.o
+│   ├── b__main_ada_callpython_module.o
 │   ├── b__main_ada_xxxxxxx.adb
 │   ├── b__main_ada_xxxxxxx.ads
 │   ├── b__main_ada_xxxxxxx.ali
 │   ├── b__main_ada_xxxxxxx.o
 │   ├── gpsauto.cgpr
-│   ├── main_ada_xxxxxxx.adb.stderr
-│   ├── main_ada_xxxxxxx.adb.stdout
-│   ├── main_ada_xxxxxxx.ali
+│   ├── main_ada_call_python_module.adb.stderr
+│   ├── main_ada_callpython_module.adb.stderr
+│   ├── main_ada_call_python_module.adb.stdout
+│   ├── main_ada_callpython_module.adb.stdout
+│   ├── main_ada_call_python_module.ali
+│   ├── main_ada_callpython_module.ali
+│   ├── main_ada_call_python_module.bexch
+│   ├── main_ada_callpython_module.bexch
+│   ├── main_ada_call_python_module.cswi
+│   ├── main_ada_callpython_module.cswi
+│   ├── main_ada_call_python_module.o
+│   ├── main_ada_callpython_module.o
 │   ├── main_ada_xxxxxxx.bexch
-│   ├── main_ada_xxxxxxx.cswi
-│   ├── main_ada_xxxxxxx.o
+│   ├── pkg_ada_call_python_module.adb.stderr
+│   ├── pkg_ada_callpython_module.adb.stderr
+│   ├── pkg_ada_call_python_module.adb.stdout
+│   ├── pkg_ada_callpython_module.adb.stdout
+│   ├── pkg_ada_call_python_module.ali
+│   ├── pkg_ada_callpython_module.ali
+│   ├── pkg_ada_call_python_module.cswi
+│   ├── pkg_ada_callpython_module.cswi
+│   ├── pkg_ada_call_python_module.o
+│   ├── pkg_ada_callpython_module.o
 │   ├── pkg_ada_datetime_stamp.adb.stderr
 │   ├── pkg_ada_datetime_stamp.adb.stdout
 │   ├── pkg_ada_datetime_stamp.ali
 │   ├── pkg_ada_datetime_stamp.cswi
-│   └── pkg_ada_datetime_stamp.o
+│   ├── pkg_ada_datetime_stamp.o
+│   ├── pkg_ada_realtime_delays.adb.stderr
+│   ├── pkg_ada_realtime_delays.adb.stdout
+│   ├── pkg_ada_realtime_delays.ali
+│   ├── pkg_ada_realtime_delays.cswi
+│   └── pkg_ada_realtime_delays.o
+├── python_module.py
+├── python_module.pyc
+├── README.md
 └── src
-    ├── main_ada_xxxxxxx.adb
-    └── pkg-ada-datetime-stamp
-        ├── pkg_ada_datetime_stamp.adb
-        └── pkg_ada_datetime_stamp.ads
+    ├── main_ada_callpython_module.adb
+    ├── mod-python
+    ├── pkg-ada-callpython-module
+    │   ├── pkg_ada_callpython_module.adb
+    │   └── pkg_ada_callpython_module.ads
+    ├── pkg-ada-datetime-stamp
+    │   ├── pkg_ada_datetime_stamp.adb
+    │   └── pkg_ada_datetime_stamp.ads
+    ├── pkg-ada-random-numbers
+    │   ├── pkg_ada_random_numbers.adb
+    │   └── pkg_ada_random_numbers.ads
+    └── pkg-ada-realtime-delays
+        ├── pkg_ada_realtime_delays.adb
+        └── pkg_ada_realtime_delays.ads
 
-11 directories, 57 files
-wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mit/ada-readymade-template$ 
+16 directories, 74 files
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mmu/ada-callpython-template$ 
+
 ===========================================================
-ALHAMDULILLAH 3 TIMES WRY.
+ALHAMDULILLAH 3 TIMES.
 ===========================================================
 

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file />
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/wruslan/github-mmu/ada-callpython-template/ada_callpython_template.gpr</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <vfs_file >/home/wruslan/github-mmu/ada-callpython-template/ada_callpython_template.gpr</vfs_file>
+    <file_marker current="true" column=" 1" line=" 1">
+      <vfs_project  />
+      <vfs_file >/home/wruslan/github-mmu/ada-callpython-template/ada_callpython_template.gpr</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
