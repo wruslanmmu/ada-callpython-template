@@ -1,5 +1,5 @@
 def hello():
-    print 'Hello from Python module!'
+    print 'Bismillah from python_module_01'
     
 def add(a, b):
     print 'Python adding:', a, '+', b

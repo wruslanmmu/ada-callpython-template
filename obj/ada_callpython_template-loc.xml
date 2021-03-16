@@ -2,9 +2,17 @@
 <Locations >
   <Project>
     <vfs_file />
-    <file_marker current="true" column=" 1" line=" 1" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project />
       <vfs_file>/home/wruslan/github-mmu/ada-callpython-template/ada_callpython_template.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 8" line=" 103" >
+      <vfs_project>/home/wruslan/github-mmu/ada-callpython-template/ada_callpython_template.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/ada-callpython-template/src/pkg-ada-callpython-module/pkg_ada_callpython_module.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/wruslan/github-mmu/ada-callpython-template/pymods/python_module.py</vfs_file>
     </file_marker>
   </Project>
   <Project >

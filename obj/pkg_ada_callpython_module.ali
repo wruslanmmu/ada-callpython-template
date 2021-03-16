@@ -2,12 +2,13 @@ V "GNAT Lib v9"
 A -gnatA
 A -mtune=generic
 A -march=x86-64
-P SS ZX
+P ZX
 
 RN
 RV NO_ALLOCATORS
 RV NO_ANONYMOUS_ALLOCATORS
 RV NO_EXCEPTIONS
+RV NO_IO
 RV NO_LOCAL_ALLOCATORS
 RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
@@ -16,8 +17,11 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U pkg_ada_callpython_module%b  pkg_ada_callpython_module.adb  8c433975 NE OO PK IL
+U pkg_ada_callpython_module%b  pkg_ada_callpython_module.adb  994f3eb1 NE OO PK IL
+W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
 W interfaces%s		interfac.ads		interfac.ali
 W interfaces.c%s	i-c.adb			i-c.ali
 Z system.concat_2%s	s-conca2.adb		s-conca2.ali
@@ -25,119 +29,138 @@ Z system.concat_3%s	s-conca3.adb		s-conca3.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
 U pkg_ada_callpython_module%s  pkg_ada_callpython_module.ads  543d1468 EE OO PK IL
+Z ada.tags%s		a-tags.adb		a-tags.ali
 W system%s		system.ads		system.ali
 Z system.exception_table%s  s-exctab.adb	s-exctab.ali
 Z system.standard_library%s  s-stalib.adb	s-stalib.ali
 
 D ada.ads		20200312110721 76789da1 ada%s
 D a-except.ads		20200312110721 291912d5 ada.exceptions%s
+D a-ioexce.ads		20200312110721 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200312110721 119b8fb3 ada.streams%s
+D a-tags.ads		20200312110721 491b781d ada.tags%s
+D a-textio.ads		20200312110721 881db35a ada.text_io%s
 D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
+D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
 D pkg_ada_callpython_module.ads  20210315203355 1208f86c pkg_ada_callpython_module%s
-D pkg_ada_callpython_module.adb  20210315210354 ca6ad082 pkg_ada_callpython_module%b
+D pkg_ada_callpython_module.adb  20210316001805 577b641c pkg_ada_callpython_module%b
 D system.ads		20200312110721 4635ec04 system%s
 D s-conca2.ads		20200312110721 02a0d7d0 system.concat_2%s
 D s-conca3.ads		20200312110721 0b705ca5 system.concat_3%s
+D s-crtl.ads		20200312110721 0ebbdb71 system.crtl%s
 D s-exctab.ads		20200312110721 54135002 system.exception_table%s
+D s-ficobl.ads		20200312110721 078245e4 system.file_control_block%s
 D s-parame.ads		20200312110721 48ec542b system.parameters%s
 D s-secsta.ads		20200312110721 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20200312110721 a7318a92 system.soft_links%s
+D s-stache.ads		20200312110721 a37c21ec system.stack_checking%s
 D s-stalib.ads		20200312110721 09bd3940 system.standard_library%s
 D s-stoele.ads		20200312110721 2dc34a04 system.storage_elements%s
 D s-traent.ads		20200312110721 005bf670 system.traceback_entries%s
-X 4 interfac.ads
-38K9*Interfaces 184e15 7|1r6 9r43 18r46 18r78 27r51 30r43 36r66 51r22 51r49
-. 52r39 52r70 75r15 77r36 82r53 107r57 146r43 146r75 146r100 151r24 153r16
-. 155r34 155r60 155r82
-X 5 i-c.ads
-18K20*C 230e17 7|1w17 9r54 18r57 18r89 27r62 30r54 36r77 51r33 51r60 52r50
-. 52r81 75r26 77r47 82r64 107r68 146r54 146r86 146r111 151r35 153r27 155r45
-. 155r71 155r93
-35I9*int<integer> 7|18r91 75r28 146r88 146r113 153r29 155r73 155r95
-37I9*long<long_integer> 7|27r64 151r37
+D s-unstyp.ads		20200312110721 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20200312110721 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 12|2r6 9r28
+X 6 a-textio.ads
+49K13*Text_IO 471e16 12|2w10 9r32
+263U14*Put_Line 12|95s15 100s15
+X 8 interfac.ads
+38K9*Interfaces 184e15 12|1r6 8r28
+X 9 i-c.ads
+18K20*C 230e17 12|1w17 8r39
+35I9*int<integer> 12|22r79 80r22 158r76 158r95 165r23 168r61 168r77
+37I9*long<long_integer> 12|31r58 163r31
 72E9*char<character>
-79A9*char_array(72E9)<60M9> 7|9r56 18r59 30r56 36r79 51r35 52r52 52r83 146r56
-84V13*To_C{79A9} 7|51s62 77s49 82s66 107s70 155s47
-X 6 pkg_ada_callpython_module.ads
-4K9*pkg_ada_callpython_module 27E9 30l5 30e30 7|4b14 165l5 165t30
-7X4*Interpreter_Error 7|90r16 112r16 125r16
-9M9*Module<8|67M9> 16r56 17r35 21r27 22r27 27c9 7|81r56 93r14 97r35 105r32
-. 134r27 143r27
-11U14*Initialize 11>26 7|47b14 65l8 65t18
-11a26 Program_Name{string} 7|47b26 49r10 51r68
-12U14*Finalize 7|68b14 71l8 71t16
-14U14*Execute_String 14>30 7|63s7 64s7 74b14 78l8 78t22
-14a30 Script{string} 7|74b30 77r55
-16V13*Import_File{9M9} 16>26 7|81b13 94l8 94t19
-16a26 File_Name{string} 7|81b26 82r72 90r73
-17U14*Close_Module 17>28 7|97b14 100l8 100t20
-17m28 M{9M9} 7|97b28 99r28
-21U14*Call 21>20 21>35 7|134b14 140l8 140t12
-21m20 M{9M9} 7|134b20 135r35
-21a35 Function_Name{string} 7|134b35 135r38
-22V14*Call{integer} 22>20 22>35 22>62 22>78 7|143b14 162l8 162t12
-22m20 M{9M9} 7|143b20 144r35
-22a35 Function_Name{string} 7|143b35 144r38 156r35
-22i62 A{integer} 7|143b62 155r78
-22i78 B{integer} 7|143b78 155r100
-X 7 pkg_ada_callpython_module.adb
-7M12 PyObject{8|67M9} 21r34 24r34 27r34 30r75 33r39 33r56 36r46 36r98 39r43
-. 39r63 39r80 82r20 83r11 99r18 105r74 106r18 106r30 107r11 119r33 119r84
-. 119r101 120r18 135r11 136r16 144r11 146r125 149r18 150r18
-9U14 Py_SetProgramName 9>33 10b<c,Py_SetProgramName>22 54s13
-9a33 Name{5|79A9}
-12U14 Py_Initialize 13b<c,Py_Initialize>22 58s7
-15U14 Py_Finalize 16b<c,Py_Finalize>22 70s7
-18V13 PyRun_SimpleString{5|35I9} 18>33 19b<c,PyRun_SimpleString>22 77s16
-18a33 Command{5|79A9}
-21U14 Py_IncRef 21>25 22b<c,Py_IncRef>22
-21m25 Obj{7M12}
-24U14 Py_DecRef 24>25 25b<c,Py_DecRef>22 87s7 99s7 139s7 158s7 159s7
-24m25 Obj{7M12}
-27V13 PyInt_AsLong{5|37I9} 27>27 28b<c,PyInt_AsLong>22 157s17
-27m27 I{7M12}
-30V13 PyString_FromString{7M12} 30>34 31b<c,PyString_FromString>22 82s32
-30a34 Str{5|79A9}
-33V13 PyImport_Import{7M12} 33>30 34b<c,PyImport_Import>22 83s23
-33m30 Obj{7M12}
-36V13 PyObject_GetAttrString{7M12} 36>37 36>56 37b<c,PyObject_GetAttrString>22
-. 107s23
-36m37 Obj{7M12}
-36a56 Name{5|79A9}
-39V13 PyObject_CallObject{7M12} 39>34 39>53 40b<c,PyObject_CallObject>22
-. 123s19 138s17
-39m34 Obj{7M12}
-39m53 Args{7M12}
-42U14 PyErr_Print 43b<c,PyErr_Print>22
-51a13 C_Name{5|79A9} 52r95
-52p13 Program_Name_Ptr(5|79A9) 54r32
-75i7 Dummy{5|35I9} 77m7
-82m7 PyFileName{7M12} 83r40 87r18
-83m7 M{7M12} 88r10 93r22
-105V13 Get_Symbol{7M12} 105b13 105>25 105>40 116l8 116t18 135s23 144s23
-105m25 M{6|9M9} 106r40
-105a40 Function_Name{string} 107r76 112r65
-106m7 PyModule{7M12} 107r47
-107m7 F{7M12} 110r10 115r14
-119V13 Call_Object{7M12} 119b13 119>26 119>43 119>70 129l8 129t19 156s19
-119m26 F{7M12} 123r40
-119a43 Function_Name{string} 125r54
-119m70 PyParams{7M12} 123r43
-120m7 PyResult{7M12} 123m7 124r10 128r14
-135m7 F{7M12} 138r38
-136m7 Result{7M12} 138m7 139r18
-144m7 F{7M12} 156r32
-146V16*Py_BuildValue{7M12} 146>31 146>68 146>93 147b<c,Py_BuildValue>25 155s19
-146a31 Format{5|79A9}
-146i68 A{5|35I9}
-146i93 B{5|35I9}
-149m7 PyParams{7M12} 155m7 156r50 158r18
-150m7 PyResult{7M12} 156m7 157r31 159r18
-151i7 Result{5|37I9} 157m7 161r23
-X 8 system.ads
-37K9*System 6|1w6 27r23 7|7r24 85r16 88r14 108r16 110r14 121r16 124r21 138r41
-. 8|156e11
-67M9*Address 6|27r30 7|7r31 85r23 108r23 121r23
-69m4*Null_Address{67M9} 7|88r21 110r21 124r28 138r48
-81V14*"="{boolean} 7|88r12 110r12 124r19
+79A9*char_array(72E9)<60M9> 12|13r50 22r53 34r50 40r73 55r29 56r46 56r71
+. 158r50
+84V13*To_C{79A9} 12|55s50 82s43 88s60 118s64 168s41
+X 11 pkg_ada_callpython_module.ads
+4K9*pkg_ada_callpython_module 27E9 30l5 30e30 12|5b14 178l5 178t30
+7X4*Interpreter_Error 12|98r16 124r16 137r16
+9M9*Module<13|67M9> 16r56 17r35 21r27 22r27 27c9 12|86r56 103r14 107r35 115r32
+. 146r27 155r27
+11U14*Initialize 11>26 12|51b14 70l8 70t18
+11a26 Program_Name{string} 12|51b26 53r10 55r56
+12U14*Finalize 12|73b14 76l8 76t16
+14U14*Execute_String 14>30 12|67s7 68s7 79b14 83l8 83t22
+14a30 Script{string} 12|79b30 82r49
+16V13*Import_File{9M9} 16>26 12|86b13 104l8 104t19
+16a26 File_Name{string} 12|86b26 88r66 95r77 98r73 100r73
+17U14*Close_Module 17>28 12|107b14 110l8 110t20
+17m28 M{9M9} 12|107b28 109r28
+21U14*Call 21>20 21>35 12|146b14 152l8 152t12
+21m20 M{9M9} 12|146b20 147r35
+21a35 Function_Name{string} 12|146b35 147r38
+22V14*Call{integer} 22>20 22>35 22>62 22>78 12|155b14 175l8 175t12
+22m20 M{9M9} 12|155b20 156r35
+22a35 Function_Name{string} 12|155b35 156r38 169r35
+22i62 A{integer} 12|155b62 168r66
+22i78 B{integer} 12|155b78 168r82
+X 12 pkg_ada_callpython_module.adb
+8K12 IFaceC=8:39 13r43 22r46 22r72 31r51 34r43 40r66 55r22 55r43 56r39 56r64
+. 80r15 82r36 88r53 118r57 158r43 158r69 158r88 163r24 165r16 168r34 168r54
+. 168r70
+9K12 ATIO=9:32 95r10 100r10
+11M12 PyObject{13|67M9} 25r34 28r34 31r34 34r69 37r39 37r56 40r46 40r92 43r43
+. 43r63 43r80 88r20 89r11 109r18 115r74 117r18 117r30 118r11 131r33 131r84
+. 131r101 132r18 147r11 148r16 156r11 158r107 161r18 162r18
+13U14 Py_SetProgramName 13>33 14b<c,Py_SetProgramName>22 58s13
+13a33 Name{9|79A9}
+16U14 Py_Initialize 17b<c,Py_Initialize>22 62s7
+19U14 Py_Finalize 20b<c,Py_Finalize>22 75s7
+22V13 PyRun_SimpleString{9|35I9} 22>33 23b<c,PyRun_SimpleString>22 82s16
+22a33 Command{9|79A9}
+25U14 Py_IncRef 25>25 26b<c,Py_IncRef>22
+25m25 Obj{11M12}
+28U14 Py_DecRef 28>25 29b<c,Py_DecRef>22 93s7 109s7 151s7 171s7 172s7
+28m25 Obj{11M12}
+31V13 PyInt_AsLong{9|37I9} 31>27 32b<c,PyInt_AsLong>22 170s17
+31m27 I{11M12}
+34V13 PyString_FromString{11M12} 34>34 35b<c,PyString_FromString>22 88s32
+34a34 Str{9|79A9}
+37V13 PyImport_Import{11M12} 37>30 38b<c,PyImport_Import>22 89s23
+37m30 Obj{11M12}
+40V13 PyObject_GetAttrString{11M12} 40>37 40>56 41b<c,PyObject_GetAttrString>22
+. 118s23
+40m37 Obj{11M12}
+40a56 Name{9|79A9}
+43V13 PyObject_CallObject{11M12} 43>34 43>53 44b<c,PyObject_CallObject>22
+. 135s19 150s17
+43m34 Obj{11M12}
+43m53 Args{11M12}
+46U14 PyErr_Print 47b<c,PyErr_Print>22
+55a13 C_Name{9|79A9} 56r83
+56p13 Program_Name_Ptr(9|79A9) 58r32
+80i7 Dummy{9|35I9} 82m7
+88m7 PyFileName{11M12} 89r40 93r18
+89m7 M{11M12} 94r10 103r22
+115V13 Get_Symbol{11M12} 115b13 115>25 115>40 128l8 128t18 147s23 156s23
+115m25 M{11|9M9} 117r40
+115a40 Function_Name{string} 118r70 124r65
+117m7 PyModule{11M12} 118r47
+118m7 F{11M12} 122r10 127r14
+131V13 Call_Object{11M12} 131b13 131>26 131>43 131>70 141l8 141t19 169s19
+131m26 F{11M12} 135r40
+131a43 Function_Name{string} 137r54
+131m70 PyParams{11M12} 135r43
+132m7 PyResult{11M12} 135m7 136r10 140r14
+147m7 F{11M12} 150r38
+148m7 Result{11M12} 150m7 151r18
+156m7 F{11M12} 169r32
+158V16*Py_BuildValue{11M12} 158>31 158>62 158>81 159b<c,Py_BuildValue>25
+. 168s19
+158a31 Format{9|79A9}
+158i62 A{9|35I9}
+158i81 B{9|35I9}
+161m7 PyParams{11M12} 168m7 169r50 171r18
+162m7 PyResult{11M12} 169m7 170r31 172r18
+163i7 Result{9|37I9} 170m7 174r23
+X 13 system.ads
+37K9*System 11|1w6 27r23 12|11r24 91r16 94r14 119r16 122r14 133r16 136r21
+. 150r41 13|156e11
+67M9*Address 11|27r30 12|11r31 91r23 119r23 133r23
+69m4*Null_Address{67M9} 12|94r21 122r21 136r28 150r48
+81V14*"="{boolean} 12|94r12 122r12 136r19
 

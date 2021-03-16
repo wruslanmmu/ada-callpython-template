@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#1576ff0d#;
+   u00001 : constant Version_32 := 16#85ba07cd#;
    pragma Export (C, u00001, "main_ada_callpython_moduleB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -325,7 +325,7 @@ package ada_main is
    pragma Export (C, u00143, "system__finalization_rootS");
    u00144 : constant Version_32 := 16#bbaa76ac#;
    pragma Export (C, u00144, "system__file_control_blockS");
-   u00145 : constant Version_32 := 16#8c433975#;
+   u00145 : constant Version_32 := 16#994f3eb1#;
    pragma Export (C, u00145, "pkg_ada_callpython_moduleB");
    u00146 : constant Version_32 := 16#543d1468#;
    pragma Export (C, u00146, "pkg_ada_callpython_moduleS");
@@ -429,10 +429,14 @@ package ada_main is
    pragma Export (C, u00195, "ada__real_time__delaysB");
    u00196 : constant Version_32 := 16#0a5c26d7#;
    pragma Export (C, u00196, "ada__real_time__delaysS");
-   u00197 : constant Version_32 := 16#2323a8af#;
-   pragma Export (C, u00197, "system__memoryB");
-   u00198 : constant Version_32 := 16#1f488a30#;
-   pragma Export (C, u00198, "system__memoryS");
+   u00197 : constant Version_32 := 16#932a4690#;
+   pragma Export (C, u00197, "system__concat_4B");
+   u00198 : constant Version_32 := 16#3851c724#;
+   pragma Export (C, u00198, "system__concat_4S");
+   u00199 : constant Version_32 := 16#2323a8af#;
+   pragma Export (C, u00199, "system__memoryB");
+   u00200 : constant Version_32 := 16#1f488a30#;
+   pragma Export (C, u00200, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -499,6 +503,8 @@ package ada_main is
    --  system.concat_2%b
    --  system.concat_3%s
    --  system.concat_3%b
+   --  system.concat_4%s
+   --  system.concat_4%b
    --  system.traceback%s
    --  system.traceback%b
    --  system.case_util%s

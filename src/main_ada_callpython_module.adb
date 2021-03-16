@@ -27,8 +27,12 @@ is
    -- VARIABLE DECLARATIONS
    startClock, finishClock   : ART.Time;  
       
-
-   Module : PACPM.Module;
+   ModuleDir  : String := "src/mod-python/"; 
+   ModuleName_01 : String := "python_module_01";  -- No need .py suffix
+   ModuleName_02 : String := "python_module_02";  -- No need .py suffix
+     
+   Module_01 : PACPM.Module;
+   Module_02 : PACPM.Module;
    
    A : Integer := 10;
    B : Integer := 2;
@@ -41,38 +45,80 @@ begin  -- FOR procedure MAIN
    ATIO.New_Line;
    
    -- CODE BEGINS HERE
-   -- =====================================================
+   ATIO.Put_Line ("-- =====================================================");
    PACPM.Initialize;
 
-   ATIO.Put_Line ("executing Python directly from Ada:");
-   PACPM.Execute_String ("print 'Hello from Python!'");
+   ATIO.Put_Line ("Ada executing Python directly (in Ada environment)");
+   
+   ATIO.Put_Line ("Executing... print 'Bismillah 3 times WRY'");
+   ATIO.Put ("Return from python: ");
+   PACPM.Execute_String ("print 'Bismillah 3 times WRY'");
 
    ATIO.New_Line;
-   ATIO.Put_Line ("loading external Python module and calling functions from that module:");
-   Module := PACPM.Import_File ("python_module");   -- THE PY file 
-   PACPM.Call (Module, "hello");
+   ATIO.Put_Line ("Executing... PACPM.Execute_String (""import numpy"") ");
+   PACPM.Execute_String ("import numpy as np");
+  
+   ATIO.Put_Line ("Executing... PACPM.Execute_String (""import scipy"") ");
+   PACPM.Execute_String ("import scipy");
+   
+   ATIO.Put_Line ("Executing... PACPM.Execute_String (""import matplotlib"") ");
+   PACPM.Execute_String ("import matplotlib");
+      
+   ATIO.Put_Line ("This invokes the matplotlib GUI and display a plot");
+   PACPM.Execute_String ("import matplotlib.pyplot as plt");
+   
+   PACPM.Execute_String ("x = np.arange(0.0, 10.0, 0.1)");
+   PACPM.Execute_String ("y = np.sin(x)");
+   PACPM.Execute_String ("plt.plot(x, y)");   
+   PACPM.Execute_String ("plt.show()");
+   PACPM.Execute_String ("plt.close()");
+   PACPM.Execute_String ("plt.pause(3)"); -- Allow enough time for GUI closing
+      
+   ATIO.New_Line;
+   ATIO.Put_Line ("-- =====================================================");
+   ATIO.Put_Line ("Loading external Python module and calling functions from that module:");
+   ATIO.Put_Line ("Loading module from file  : " & ModuleDir & ModuleName_01 & ".py");
+   
+   Module_01 := PACPM.Import_File (ModuleName_01);   -- The python file without .py
+    
+   ATIO.New_Line;
+   PACPM.Call (Module_01, "hello");
    
    ATIO.New_Line;
    ATIO.Put_Line ("asking Python to add two integers:");
-   Result := PACPM.Call (Module, "add", A, B);
+   Result := PACPM.Call (Module_01, "add", A, B);
    
    ATIO.Put_Line ("Ada got result from Python:" & Integer'Image (Result));
    
    ATIO.New_Line;
    ATIO.Put_Line ("we can try other operations, too:");
    
-   Result := PACPM.Call (Module, "sub", A, B);
+   Result := PACPM.Call (Module_01, "sub", A, B);
    ATIO.Put_Line ("subtract:" & Integer'Image (Result));
    
-   Result := PACPM.Call (Module, "mul", A, B);
+   Result := PACPM.Call (Module_01, "mul", A, B);
    ATIO.Put_Line ("multiply:" & Integer'Image (Result));
    
-   Result := PACPM.Call (Module, "div", A, B);
+   Result := PACPM.Call (Module_01, "div", A, B);
    ATIO.Put_Line ("divide  :" & Integer'Image (Result));
    
-   PACPM.Close_Module (Module);
-
+   PACPM.Close_Module (Module_01);
    PACPM.Finalize;
+   
+   ATIO.New_Line;
+   ATIO.Put_Line ("-- =====================================================");
+   PACPM.Initialize;
+   ATIO.Put_Line ("Loading external Python module and calling functions from that module:");
+   ATIO.Put_Line ("Loading module from file  : " & ModuleDir & ModuleName_02 & ".py");
+   Module_02 := PACPM.Import_File (ModuleName_02);   -- The python file without .py
+   
+   ATIO.New_Line;
+   PACPM.Call (Module_02, "hello");
+   ATIO.New_Line;
+   
+   PACPM.Close_Module (Module_02);
+   PACPM.Finalize;
+   ATIO.Put_Line ("-- =====================================================");
    
    -- CODE ENDS HERE
    -- =====================================================

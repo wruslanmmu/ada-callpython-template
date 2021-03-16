@@ -1,0 +1,7 @@
+https://matplotlib.org/stable/tutorials/introductory/pyplot.html
+
+https://www.edureka.co/blog/python-matplotlib-tutorial/
+
+https://realpython.com/python-matplotlib-guide/
+
+
